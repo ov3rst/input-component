@@ -1,0 +1,219 @@
+:root {
+  /* colors */
+  --gray-1: #f2f2f2;
+  --gray-2: #e0e0e0;
+  --gray-3: #9e9e9e;
+  --gray-4: #828282;
+  --gray-5: #4f4f4f;
+  --gray-6: #333;
+
+  --blue: #2962ff;
+
+  --red: #d32f2f;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--gray-5);
+}
+
+input,
+textarea {
+  border-radius: 0.5rem;
+  border: thin solid var(--gray-4);
+  color: var(--gray-6);
+  font-family: "Noto Sans", serif;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  outline: none;
+  padding: 1.1rem 1.125rem;
+  width: 12.5rem;
+  resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--gray-4);
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+  font-family: "Noto Sans", serif;
+}
+
+main {
+  margin: 2rem 5rem;
+}
+
+p {
+  font-size: 0.75rem;
+  font-family: "Ubuntu Mono", sans-serif;
+}
+
+span {
+  display: block;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-group {
+  margin-top: 4rem;
+}
+
+.input-group:not(.input-group:first-of-type) {
+  margin-top: 2.625rem;
+}
+
+.input-content {
+  margin-top: 1rem;
+}
+
+.normal-input,
+.error-input {
+  width: 45.5rem;
+}
+
+.normal-input .input-container:not(.input-container:first-of-type) p,
+.error-input .input-container:not(.input-container:first-of-type) p {
+  color: var(--gray-4);
+}
+
+.icon-input,
+.size-input {
+  width: 34.75rem;
+}
+
+/* individual styles */
+
+/* normal input */
+
+.normal-input .input-container:nth-of-type(2) input {
+  border-color: var(--gray-6);
+}
+
+.normal-input .input-container:last-of-type {
+  color: var(--blue);
+}
+
+.normal-input .input-container:last-of-type input {
+  border-color: var(--blue);
+}
+
+/* error input */
+
+.error-input .input-container:nth-of-type(2) input {
+  border-color: var(--gray-6);
+}
+
+.error-input .input-container:first-of-type input,
+.error-input .input-container:last-of-type input {
+  border-color: var(--red);
+}
+
+.error-input .input-content:first-of-type,
+.error-input .input-content:last-of-type {
+  color: var(--red);
+}
+
+/* disabled input */
+
+.disabled-input input {
+  background-color: var(--gray-1);
+  border-color: var(--gray-2);
+}
+
+/* helper input */
+
+.helper-text-input {
+  width: 41rem;
+}
+
+.helper-text-input span {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.625rem;
+  margin-top: 0.25rem;
+}
+
+.helper-text-input .input-container:first-of-type span {
+  color: var(--gray-4);
+}
+
+.helper-text-input .input-content:last-of-type {
+  color: var(--red);
+}
+
+.helper-text-input .input-container:last-of-type input {
+  border-color: var(--red);
+}
+
+/*icon input */
+
+.icon-input .input-content {
+  position: relative;
+}
+
+.icon-input .input-content::after {
+  content: url(call.svg);
+  position: absolute;
+  top: 2.3rem;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-input .input-container:first-of-type .input-content::after {
+  left: 0.5rem;
+}
+
+.icon-input .input-container:first-of-type input {
+  padding-left: 44px;
+}
+
+.icon-input .input-container:last-of-type .input-content::after {
+  content: url(lock.svg);
+  right: 0.8rem;
+}
+
+/* value icon */
+
+/* size icon */
+
+.size-input .input-container:first-of-type {
+  align-self: flex-start;
+}
+
+.size-input .input-container:first-of-type input {
+  padding: 0.625rem 0.75rem;
+}
+
+/* full width input */
+
+.full-input .input-container,
+.full-input .input-container input {
+  width: 100%;
+}
+
+/* multiline input */
+
+.multiline-input .input-container textarea {
+  height: 9.375rem;
+}

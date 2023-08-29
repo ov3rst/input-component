@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans:wght@400;500&family=Poppins:wght@500&family=Ubuntu+Mono&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Input Component - Devchallenges</title>
+
+</head>
+
+<body>
+  <main>
+    <h1>Inputs</h1>
+    <div class="normal-input input-group">
+      <div class="input-container">
+        <p>&lt;Input /&gt;</p>
+        <div class="input-content">
+          <label for="input">Label</label>
+          <input type="text" id="input" placeholder="Placeholder">
+        </div>
+      </div>
+      <div class="input-container">
+        <p>&:hover</p>
+        <div class="input-content">
+          <label for="input-hover">Label</label>
+          <input type="text" id="input-hover" placeholder="Placeholder">
+        </div>
+      </div>
+      <div class="input-container">
+        <p>&:focus</p>
+        <div class="input-content">
+          <label for="input-focus">Label</label>
+          <input type="text" id="input-focus" placeholder="Placeholder">
+        </div>
+      </div>
+    </div>
+    <div class="error-input input-group">
+      <div class="input-container">
+        <p>&lt;Input error /&gt;</p>
+        <div class="input-content">
+          <label for="error">Label</label>
+          <input type="text" id="error" placeholder="Placeholder">
+        </div>
+      </div>
+      <div class="input-container">
+        <p>&:hover</p>
+        <div class="input-content">
+          <label for="error-hover">Label</label>
+          <input type="text" id="error-hover" placeholder="Placeholder">
+        </div>
+      </div>
+      <div class="input-container">
+        <p>&:focus</p>
+        <div class="input-content">
+          <label for="error-focus">Label</label>
+          <input type="text" id="error-focus" placeholder="Placeholder">
+        </div>
+      </div>
+    </div>
+    <div class="disabled-input input-group">
+      <div class="input-container">
+        <p>&lt;Input disabled /&gt;</p>
+        <div class="input-content">
+          <label for="disabled">Label</label>
+          <input type="text" id="disabled" placeholder="Placeholder" disabled>
+        </div>
+      </div>
+    </div>
+    <div class="helper-text-input input-group">
+      <div class="input-container">
+        <p>&lt;Input helperText="Some interesting text" /&gt;</p>
+        <div class="input-content">
+          <label for="helper">Label</label>
+          <input type="text" id="helper" placeholder="Placeholder">
+          <span>Some interesting text</span>
+        </div>
+      </div>
+      <div class="input-container">
+        <p>&lt;Input helperText="Some interesting text" error /&gt;</p>
+        <div class="input-content">
+          <label for="helper-error">Label</label>
+          <input type="text" id="helper-error" placeholder="Placeholder">
+          <span>Some interesting text</span>
+        </div>
+      </div>
+    </div>
+    <div class="icon-input input-group">
+      <div class="input-container">
+        <p>&lt;Input startIcon /&gt;</p>
+        <div class="input-content">
+          <label for="start">Label</label>
+          <input type="text" id="start" placeholder="Placeholder">
+        </div>
+      </div>
+      <div class="input-container">
+        <p>&lt;Input endIcon /&gt;</p>
+        <div class="input-content">
+          <label for="end">Label</label>
+          <input type="text" id="end" placeholder="Placeholder">
+        </div>
+      </div>
+    </div>
+    <div class="value-input input-group">
+      <div class="input-container">
+        <p>&lt;Input value="text" /&gt;</p>
+        <div class="input-content">
+          <label for="value">Label</label>
+          <input type="text" id="value" placeholder="Placeholder" value="Text">
+        </div>
+      </div>
+    </div>
+    <div class="size-input input-group">
+      <div class="input-container">
+        <p>&lt;Input size="sm" /&gt;</p>
+        <div class="input-content">
+          <label for="sm">Label</label>
+          <input type="text" id="sm" placeholder="Placeholder">
+        </div>
+      </div>
+      <div class="input-container">
+        <p>&lt;Input size="md" /&gt;</p>
+        <div class="input-content">
+          <label for="md">Label</label>
+          <input type="text" id="md" placeholder="Placeholder">
+        </div>
+      </div>
+    </div>
+    <div class="full-input input-group">
+      <div class="input-container">
+        <p>&lt;Input fullWidth /&gt;</p>
+        <div class="input-content">
+          <label for="full">Label</label>
+          <input type="text" id="full" placeholder="Placeholder">
+        </div>
+      </div>
+    </div>
+    <div class="multiline-input input-group">
+      <div class="input-container">
+        <p>&lt;Input multiline row="4" /&gt;</p>
+        <div class="input-content">
+          <label for="multiline">Label</label>
+          <textarea rows="4" id="multiline" placeholder="Placeholder"></textarea>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- <div class="welcome">
+    <div class="welcome-text">
+      <h1>
+        Welcome to
+        <a href="https://devchallenges.io/" target="_blank">devchallenges.io</a>
+      </h1>
+
+      <p>
+        If you have any questions, don't hesitate to ask on Discord. Here are
+        7 general steps to complete the challenge:
+      </p>
+    </div>
+
+    <ul>
+      <li><b>Step 1:</b> Create a new repository on github</li>
+      <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
+      <li>
+        <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
+      </li>
+      <li><b>Step 4:</b> Complete all user stories</li>
+      <li><b>Step 5:</b> Update README.md</li>
+      <li><b>Step 6:</b> Deploy your app and submit your solution</li>
+      <li>
+        <b>Step 7:</b> Share your solution on Discord, Twitter and other
+        platforms to ask for feedback
+      </li>
+    </ul>
+  </div> -->
+</body>
+
+</html>
